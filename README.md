@@ -4,8 +4,10 @@ collapse -->シリアライズ
 
 RPGツクールUTU 体験版マップエディタ用  json シリアライズ/デシリアライズ ツール  
   
-これのP2d(json)データはこの様になっておりとても見にくいので、人間にわかるように整形し(expand)、また元に戻したり出来ます(collapse)  
+これのP2d(json)データはこの様になっておりとても見にくいので、人間にわかるように整形し(expand)、また元に戻したり出来ます(collapse) 
+※追記 別のファイルで"events"と"mapSettings"もシリアライズされていたので対応しました    
 <br><br><br>
+
 ■整形前  
 <img width="1114" height="204" alt="無題" src="https://github.com/user-attachments/assets/21d2234b-29e5-4093-b465-bb34d64e0844" />  
 <br><br><br>
