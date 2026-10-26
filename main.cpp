@@ -19,8 +19,9 @@ std::string removeNewlines(const std::string& str) {
 void processJson(json& j, const std::string& mode) {
 	if (j.is_object()) {
 		for (auto it = j.begin(); it != j.end(); ++it) {
-			if (it.key() == "data") {
-				if (mode == "expand") {
+			auto k= it.key();
+			if (k == "data" || k == "events" || k == "mapSettings") {
+				if (mode == "expand" ) {
 					if (it.value().is_string()) {
 						try {
 							it.value() = json::parse(it.value().get<std::string>());
